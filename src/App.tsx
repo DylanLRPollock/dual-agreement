@@ -43,10 +43,15 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
-      <div className="w-full max-w-3xl">
-        <div className="mb-6">
-          <Progress value={progressValue} className="h-2" />
+    <div className="min-h-screen bg-background flex items-center justify-center p-4 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-primary/30 rounded-full blur-3xl" />
+      </div>
+      
+      <div className="w-full max-w-3xl relative z-10">
+        <div className="mb-8">
+          <Progress value={progressValue} className="h-1.5 bg-muted" />
         </div>
 
         <AnimatePresence mode="wait">
@@ -58,69 +63,69 @@ function App() {
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="shadow-lg">
-                <CardHeader className="space-y-3">
+              <Card className="shadow-2xl border-border/50 backdrop-blur-sm bg-card/95">
+                <CardHeader className="space-y-4 pb-6">
                   <div className="flex items-center justify-between">
-                    <Badge variant="secondary" className="font-ui text-sm">
+                    <Badge variant="secondary" className="text-xs font-medium tracking-wide uppercase px-3 py-1">
                       Step 1 of 3
                     </Badge>
-                    <FileText size={24} className="text-primary" weight="duotone" />
+                    <FileText size={28} className="text-accent" weight="duotone" />
                   </div>
-                  <CardTitle className="text-3xl md:text-4xl font-semibold tracking-tight">
+                  <CardTitle className="text-3xl md:text-4xl font-bold tracking-tight">
                     Original Agreement
                   </CardTitle>
-                  <CardDescription className="text-base">
+                  <CardDescription className="text-base text-muted-foreground">
                     Please review and accept the following terms and conditions to continue.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <ScrollArea className="h-[400px] rounded-md border p-6 bg-card relative">
-                    <div className="space-y-4 text-base leading-relaxed">
-                      <h2 className="text-xl font-semibold mb-3">Terms and Conditions</h2>
+                  <ScrollArea className="h-[400px] rounded-lg border border-border/50 p-6 bg-muted/30 relative">
+                    <div className="space-y-4 text-sm leading-relaxed">
+                      <h2 className="text-xl font-bold mb-3 text-foreground">Terms and Conditions</h2>
                       
-                      <p>
+                      <p className="text-muted-foreground">
                         This User Agreement ("Agreement") is entered into between you ("User") and our company ("Company"). 
                         By accessing or using our services, you acknowledge that you have read, understood, and agree to be 
                         bound by the terms and conditions outlined herein.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">1. Acceptance of Terms</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">1. Acceptance of Terms</h3>
+                      <p className="text-muted-foreground">
                         By creating an account or using our services, you expressly acknowledge and agree to comply with all 
                         terms, conditions, and notices contained or referenced herein. If you do not agree to these terms, 
                         you must immediately cease all use of our services.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">2. User Obligations</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">2. User Obligations</h3>
+                      <p className="text-muted-foreground">
                         You agree to use the services only for lawful purposes and in accordance with this Agreement. You are 
                         responsible for maintaining the confidentiality of your account credentials and for all activities that 
                         occur under your account. You must immediately notify us of any unauthorized access or security breach.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">3. Intellectual Property Rights</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">3. Intellectual Property Rights</h3>
+                      <p className="text-muted-foreground">
                         All content, features, and functionality of our services, including but not limited to text, graphics, 
                         logos, images, and software, are the exclusive property of the Company and are protected by international 
                         copyright, trademark, patent, trade secret, and other intellectual property laws.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">4. Limitation of Liability</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">4. Limitation of Liability</h3>
+                      <p className="text-muted-foreground">
                         To the maximum extent permitted by applicable law, the Company shall not be liable for any indirect, 
                         incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether 
                         incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">5. Modifications to Agreement</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">5. Modifications to Agreement</h3>
+                      <p className="text-muted-foreground">
                         We reserve the right to modify or replace these terms at any time at our sole discretion. If a revision 
                         is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes 
                         a material change will be determined at our sole discretion.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">6. Governing Law</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">6. Governing Law</h3>
+                      <p className="text-muted-foreground">
                         This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which 
                         the Company is registered, without regard to its conflict of law provisions. Any disputes arising from this 
                         Agreement shall be resolved through binding arbitration.
@@ -128,7 +133,7 @@ function App() {
                     </div>
                   </ScrollArea>
 
-                  <div className="flex items-start space-x-3 p-4 bg-secondary/50 rounded-lg">
+                  <div className="flex items-start space-x-3 p-4 bg-muted/60 rounded-lg border border-border/30">
                     <Checkbox
                       id="accept1"
                       checked={accepted1}
@@ -137,7 +142,7 @@ function App() {
                     />
                     <label
                       htmlFor="accept1"
-                      className="text-sm leading-relaxed cursor-pointer font-ui"
+                      className="text-sm leading-relaxed cursor-pointer"
                     >
                       I have read and agree to the terms and conditions outlined in the Original Agreement
                     </label>
@@ -146,7 +151,7 @@ function App() {
                   <Button
                     onClick={handleContinue1}
                     disabled={!accepted1}
-                    className="w-full font-ui text-base tracking-wide font-semibold"
+                    className="w-full text-base tracking-wide font-semibold"
                     size="lg"
                   >
                     Continue
@@ -165,69 +170,69 @@ function App() {
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="shadow-lg">
-                <CardHeader className="space-y-3">
+              <Card className="shadow-2xl border-border/50 backdrop-blur-sm bg-card/95">
+                <CardHeader className="space-y-4 pb-6">
                   <div className="flex items-center justify-between">
-                    <Badge variant="secondary" className="font-ui text-sm">
+                    <Badge variant="secondary" className="text-xs font-medium tracking-wide uppercase px-3 py-1">
                       Step 2 of 3
                     </Badge>
-                    <FileText size={24} className="text-primary" weight="duotone" />
+                    <FileText size={28} className="text-accent" weight="duotone" />
                   </div>
-                  <CardTitle className="text-3xl md:text-4xl font-semibold tracking-tight">
+                  <CardTitle className="text-3xl md:text-4xl font-bold tracking-tight">
                     Our Agreement
                   </CardTitle>
-                  <CardDescription className="text-base">
+                  <CardDescription className="text-base text-muted-foreground">
                     One more agreement to review before we finalize everything.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <ScrollArea className="h-[400px] rounded-md border p-6 bg-card relative">
-                    <div className="space-y-4 text-base leading-relaxed">
-                      <h2 className="text-xl font-semibold mb-3">Additional Terms of Service</h2>
+                  <ScrollArea className="h-[400px] rounded-lg border border-border/50 p-6 bg-muted/30 relative">
+                    <div className="space-y-4 text-sm leading-relaxed">
+                      <h2 className="text-xl font-bold mb-3 text-foreground">Additional Terms of Service</h2>
                       
-                      <p>
+                      <p className="text-muted-foreground">
                         This supplementary agreement ("Our Agreement") establishes additional terms and conditions that govern 
                         your relationship with us. By proceeding, you acknowledge and accept these provisions in addition to 
                         the Original Agreement.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">1. Data Collection and Privacy</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">1. Data Collection and Privacy</h3>
+                      <p className="text-muted-foreground">
                         We collect, process, and store certain information about you and your use of our services. This includes 
                         personal information you provide directly, usage data collected automatically, and information from third-party 
                         sources. You consent to our collection and use of this information as described in our Privacy Policy.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">2. Communication Preferences</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">2. Communication Preferences</h3>
+                      <p className="text-muted-foreground">
                         By accepting this agreement, you consent to receive communications from us via email, SMS, push notifications, 
                         or other electronic means. These communications may include service updates, promotional materials, and 
                         important notices. You may opt out of promotional communications at any time.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">3. Account Termination</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">3. Account Termination</h3>
+                      <p className="text-muted-foreground">
                         We reserve the right to suspend or terminate your account at any time, with or without notice, for any reason, 
                         including but not limited to violation of these terms, suspicious activity, or extended periods of inactivity. 
                         You may also terminate your account at any time through your account settings.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">4. Third-Party Services</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">4. Third-Party Services</h3>
+                      <p className="text-muted-foreground">
                         Our services may integrate with or contain links to third-party websites, applications, or services. We are 
                         not responsible for the content, privacy policies, or practices of any third-party services. Your use of 
                         third-party services is at your own risk and subject to their respective terms and conditions.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">5. Indemnification</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">5. Indemnification</h3>
+                      <p className="text-muted-foreground">
                         You agree to indemnify, defend, and hold harmless the Company, its officers, directors, employees, and agents 
                         from and against any claims, liabilities, damages, losses, and expenses arising out of or in any way connected 
                         with your access to or use of our services, or your violation of these terms.
                       </p>
 
-                      <h3 className="text-lg font-semibold mt-6 mb-2">6. Entire Agreement</h3>
-                      <p>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">6. Entire Agreement</h3>
+                      <p className="text-muted-foreground">
                         This Agreement, together with the Original Agreement and our Privacy Policy, constitutes the entire agreement 
                         between you and the Company regarding your use of our services and supersedes all prior and contemporaneous 
                         understandings, agreements, representations, and warranties.
@@ -235,7 +240,7 @@ function App() {
                     </div>
                   </ScrollArea>
 
-                  <div className="flex items-start space-x-3 p-4 bg-secondary/50 rounded-lg">
+                  <div className="flex items-start space-x-3 p-4 bg-muted/60 rounded-lg border border-border/30">
                     <Checkbox
                       id="accept2"
                       checked={accepted2}
@@ -244,7 +249,7 @@ function App() {
                     />
                     <label
                       htmlFor="accept2"
-                      className="text-sm leading-relaxed cursor-pointer font-ui"
+                      className="text-sm leading-relaxed cursor-pointer"
                     >
                       I have read and agree to the additional terms outlined in Our Agreement
                     </label>
@@ -253,7 +258,7 @@ function App() {
                   <Button
                     onClick={handleContinue2}
                     disabled={!accepted2}
-                    className="w-full font-ui text-base tracking-wide font-semibold bg-accent hover:bg-accent/90"
+                    className="w-full text-base tracking-wide font-semibold bg-accent hover:bg-accent/90 text-accent-foreground"
                     size="lg"
                   >
                     Complete
@@ -271,7 +276,7 @@ function App() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4 }}
             >
-              <Card className="shadow-lg">
+              <Card className="shadow-2xl border-border/50 backdrop-blur-sm bg-card/95">
                 <CardContent className="py-16 px-8">
                   <div className="text-center space-y-6">
                     <motion.div
@@ -280,23 +285,23 @@ function App() {
                       transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
                       className="flex justify-center"
                     >
-                      <div className="bg-accent/10 p-6 rounded-full">
+                      <div className="bg-accent/20 p-6 rounded-full border-2 border-accent/30">
                         <CheckCircle size={64} className="text-accent" weight="duotone" />
                       </div>
                     </motion.div>
 
                     <div className="space-y-3">
-                      <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
+                      <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                         Thank You!
                       </h1>
-                      <p className="text-lg text-muted-foreground max-w-md mx-auto">
+                      <p className="text-base text-muted-foreground max-w-md mx-auto">
                         You have successfully accepted all agreements. This window will close automatically.
                       </p>
                     </div>
 
                     <div className="pt-4">
                       <div className="inline-flex flex-col items-center gap-3">
-                        <Badge variant="outline" className="font-ui text-base px-4 py-2">
+                        <Badge variant="outline" className="text-sm px-4 py-2 border-accent/50 text-accent">
                           Closing in {countdown} second{countdown !== 1 ? 's' : ''}
                         </Badge>
                         <div className="w-32 h-32 relative flex items-center justify-center">
@@ -306,16 +311,16 @@ function App() {
                               cy="64"
                               r="56"
                               stroke="currentColor"
-                              strokeWidth="8"
+                              strokeWidth="6"
                               fill="transparent"
-                              className="text-secondary"
+                              className="text-muted"
                             />
                             <motion.circle
                               cx="64"
                               cy="64"
                               r="56"
                               stroke="currentColor"
-                              strokeWidth="8"
+                              strokeWidth="6"
                               fill="transparent"
                               strokeLinecap="round"
                               className="text-accent"
@@ -325,7 +330,7 @@ function App() {
                             />
                           </svg>
                           <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-5xl font-semibold text-accent font-ui">
+                            <span className="text-5xl font-bold text-accent">
                               {countdown}
                             </span>
                           </div>
