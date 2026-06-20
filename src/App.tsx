@@ -81,54 +81,38 @@ function App() {
                 <CardContent className="space-y-6">
                   <ScrollArea className="h-[400px] rounded-lg border border-border/50 p-6 bg-muted/30 relative">
                     <div className="space-y-4 text-sm leading-relaxed">
-                      <h2 className="text-xl font-bold mb-3 text-foreground">Terms and Conditions</h2>
+                      <h2 className="text-xl font-bold mb-3 text-foreground">MIT License</h2>
                       
                       <p className="text-muted-foreground">
-                        This User Agreement ("Agreement") is entered into between you ("User") and our company ("Company"). 
-                        By accessing or using our services, you acknowledge that you have read, understood, and agree to be 
-                        bound by the terms and conditions outlined herein.
+                        Copyright (c) 2026 Marcin Szczygliński
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">1. Acceptance of Terms</h3>
                       <p className="text-muted-foreground">
-                        By creating an account or using our services, you expressly acknowledge and agree to comply with all 
-                        terms, conditions, and notices contained or referenced herein. If you do not agree to these terms, 
-                        you must immediately cease all use of our services.
+                        GitHub: https://github.com/szczyglis-dev/py-gpt
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">2. User Obligations</h3>
-                      <p className="text-muted-foreground">
-                        You agree to use the services only for lawful purposes and in accordance with this Agreement. You are 
-                        responsible for maintaining the confidentiality of your account credentials and for all activities that 
-                        occur under your account. You must immediately notify us of any unauthorized access or security breach.
+                      <p className="text-muted-foreground mt-6">
+                        Permission is hereby granted, free of charge, to any person obtaining a copy
+                        of this software and associated documentation files (the "Software"), to deal
+                        in the Software without restriction, including without limitation the rights
+                        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                        copies of the Software, and to permit persons to whom the Software is
+                        furnished to do so, subject to the following conditions:
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">3. Intellectual Property Rights</h3>
-                      <p className="text-muted-foreground">
-                        All content, features, and functionality of our services, including but not limited to text, graphics, 
-                        logos, images, and software, are the exclusive property of the Company and are protected by international 
-                        copyright, trademark, patent, trade secret, and other intellectual property laws.
+                      <p className="text-muted-foreground mt-6">
+                        The above copyright notice and this permission notice shall be included in all
+                        copies or substantial portions of the Software.
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">4. Limitation of Liability</h3>
-                      <p className="text-muted-foreground">
-                        To the maximum extent permitted by applicable law, the Company shall not be liable for any indirect, 
-                        incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether 
-                        incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.
-                      </p>
-
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">5. Modifications to Agreement</h3>
-                      <p className="text-muted-foreground">
-                        We reserve the right to modify or replace these terms at any time at our sole discretion. If a revision 
-                        is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes 
-                        a material change will be determined at our sole discretion.
-                      </p>
-
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">6. Governing Law</h3>
-                      <p className="text-muted-foreground">
-                        This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which 
-                        the Company is registered, without regard to its conflict of law provisions. Any disputes arising from this 
-                        Agreement shall be resolved through binding arbitration.
+                      <p className="text-muted-foreground mt-6">
+                        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                        SOFTWARE.
                       </p>
                     </div>
                   </ScrollArea>
@@ -188,54 +172,39 @@ function App() {
                 <CardContent className="space-y-6">
                   <ScrollArea className="h-[400px] rounded-lg border border-border/50 p-6 bg-muted/30 relative">
                     <div className="space-y-4 text-sm leading-relaxed">
-                      <h2 className="text-xl font-bold mb-3 text-foreground">Additional Terms of Service</h2>
+                      <h2 className="text-xl font-bold mb-3 text-foreground">GNU General Public License - Version 3</h2>
                       
                       <p className="text-muted-foreground">
-                        This supplementary agreement ("Our Agreement") establishes additional terms and conditions that govern 
-                        your relationship with us. By proceeding, you acknowledge and accept these provisions in addition to 
-                        the Original Agreement.
+                        https://opensource.org/license/gpl-3-0
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">1. Data Collection and Privacy</h3>
+                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">Preamble</h3>
+                      
                       <p className="text-muted-foreground">
-                        We collect, process, and store certain information about you and your use of our services. This includes 
-                        personal information you provide directly, usage data collected automatically, and information from third-party 
-                        sources. You consent to our collection and use of this information as described in our Privacy Policy.
+                        The GNU General Public License is a free, copyleft license for software and other kinds of works.
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">2. Communication Preferences</h3>
-                      <p className="text-muted-foreground">
-                        By accepting this agreement, you consent to receive communications from us via email, SMS, push notifications, 
-                        or other electronic means. These communications may include service updates, promotional materials, and 
-                        important notices. You may opt out of promotional communications at any time.
+                      <p className="text-muted-foreground mt-6">
+                        The licenses for most software and other practical works are designed to take away your freedom
+                        to share and change the works. By contrast, the GNU General Public License is intended to
+                        guarantee your freedom to share and change all versions of a program--to make sure it remains free
+                        software for all its users. We, the Free Software Foundation, use the GNU General Public License
+                        for most of our software; it applies also to any other work released this way by its authors. You
+                        can apply it to your programs, too.
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">3. Account Termination</h3>
-                      <p className="text-muted-foreground">
-                        We reserve the right to suspend or terminate your account at any time, with or without notice, for any reason, 
-                        including but not limited to violation of these terms, suspicious activity, or extended periods of inactivity. 
-                        You may also terminate your account at any time through your account settings.
+                      <p className="text-muted-foreground mt-6">
+                        When we speak of free software, we are referring to freedom, not price. Our General Public
+                        Licenses are designed to make sure that you have the freedom to distribute copies of free software
+                        (and charge for them if you wish), that you receive source code or can get it if you want it, that
+                        you can change the software or use pieces of it in new free programs, and that you know you can do
+                        these things.
                       </p>
 
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">4. Third-Party Services</h3>
-                      <p className="text-muted-foreground">
-                        Our services may integrate with or contain links to third-party websites, applications, or services. We are 
-                        not responsible for the content, privacy policies, or practices of any third-party services. Your use of 
-                        third-party services is at your own risk and subject to their respective terms and conditions.
-                      </p>
-
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">5. Indemnification</h3>
-                      <p className="text-muted-foreground">
-                        You agree to indemnify, defend, and hold harmless the Company, its officers, directors, employees, and agents 
-                        from and against any claims, liabilities, damages, losses, and expenses arising out of or in any way connected 
-                        with your access to or use of our services, or your violation of these terms.
-                      </p>
-
-                      <h3 className="text-base font-bold mt-6 mb-2 text-foreground">6. Entire Agreement</h3>
-                      <p className="text-muted-foreground">
-                        This Agreement, together with the Original Agreement and our Privacy Policy, constitutes the entire agreement 
-                        between you and the Company regarding your use of our services and supersedes all prior and contemporaneous 
-                        understandings, agreements, representations, and warranties.
+                      <p className="text-muted-foreground mt-6">
+                        To protect your rights, we need to prevent others from denying you these rights or asking you to
+                        surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the
+                        software, or if you modify it: responsibilities to respect the freedom of others.
                       </p>
                     </div>
                   </ScrollArea>
