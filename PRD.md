@@ -43,20 +43,20 @@ This is a focused, linear flow with a single purpose: capture user acceptance of
 
 ## Design Direction
 
-The design should evoke professionalism, clarity, and trust - like a well-designed legal document interface. It should feel official without being intimidating, using clear hierarchy and generous spacing to make legal text approachable and scannable.
+The design should evoke modern professionalism with energetic confidence - combining deep purple's tech-savvy authority with vibrant green accents for an interface that feels both trustworthy and forward-thinking. The color contrast creates visual interest while maintaining clarity and readability for legal content.
 
 ## Color Selection
 
-A sophisticated, professional palette with muted tones and clear contrast for legibility.
+A sophisticated deep purple and vibrant green color palette that balances professional authority with modern energy.
 
-- **Primary Color**: Deep navy blue (oklch(0.25 0.05 250)) - Conveys authority, trust, and professionalism appropriate for legal documents
-- **Secondary Colors**: Warm neutral gray (oklch(0.95 0.005 60)) for backgrounds - Creates a soft, approachable backdrop that reduces eye strain during reading
-- **Accent Color**: Rich green (oklch(0.55 0.15 150)) - Positive affirmation color for acceptance actions and progress indicators
+- **Primary Color**: Deep purple (oklch(0.35 0.12 285)) - Conveys trust, sophistication, and professionalism with a modern tech-forward edge
+- **Secondary Colors**: Rich dark purple (oklch(0.28 0.08 285)) for supporting elements - Creates depth and hierarchy while maintaining the professional aesthetic
+- **Accent Color**: Vibrant green (oklch(0.58 0.18 155)) - Energizing highlight color for CTAs, progress, and positive actions that creates striking visual contrast
 - **Foreground/Background Pairings**:
-  - Background (Warm Gray oklch(0.95 0.005 60)): Primary text (oklch(0.25 0.01 250)) - Ratio 7.2:1 ✓
-  - Primary (Deep Navy oklch(0.25 0.05 250)): White text (oklch(0.99 0 0)) - Ratio 12.8:1 ✓
-  - Accent (Rich Green oklch(0.55 0.15 150)): White text (oklch(0.99 0 0)) - Ratio 4.9:1 ✓
-  - Card (White oklch(0.99 0 0)): Primary text (oklch(0.25 0.01 250)) - Ratio 14.1:1 ✓
+  - Background (Deep Purple oklch(0.15 0.05 285)): Foreground text (oklch(0.95 0.01 285)) - Ratio 11.8:1 ✓
+  - Card (Rich Purple oklch(0.22 0.06 285)): Card text (oklch(0.95 0.01 285)) - Ratio 9.2:1 ✓
+  - Accent (Vibrant Green oklch(0.58 0.18 155)): White text (oklch(0.98 0.01 155)) - Ratio 5.1:1 ✓
+  - Primary (Medium Purple oklch(0.35 0.12 285)): White text (oklch(0.98 0.01 285)) - Ratio 6.3:1 ✓
 
 ## Font Selection
 
